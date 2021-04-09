@@ -130,7 +130,9 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KhachHangController.cs" />
+    <Compile Include="Controllers\PersonController.cs" />
     <Compile Include="Controllers\QuanLyController.cs" />
+    <Compile Include="Controllers\Student1Controller.cs" />
     <Compile Include="Controllers\StudentsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -163,12 +165,27 @@
     <Compile Include="Migrations\202103040402082_Create_Table_QuanLy.Designer.cs">
       <DependentUpon>202103040402082_Create_Table_QuanLy.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202104060230407_Create_Table_Person.cs" />
+    <Compile Include="Migrations\202104060230407_Create_Table_Person.Designer.cs">
+      <DependentUpon>202104060230407_Create_Table_Person.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104060232289_Create_Table_Student1.cs" />
+    <Compile Include="Migrations\202104060232289_Create_Table_Student1.Designer.cs">
+      <DependentUpon>202104060232289_Create_Table_Student1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104060237266_Create_Table_NhanVien.cs" />
+    <Compile Include="Migrations\202104060237266_Create_Table_NhanVien.Designer.cs">
+      <DependentUpon>202104060237266_Create_Table_NhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\DemoDbContext.cs" />
     <Compile Include="Models\KhachHang.cs" />
+    <Compile Include="Models\NhanVien.cs" />
+    <Compile Include="Models\Person.cs" />
     <Compile Include="Models\QuanLy.cs" />
     <Compile Include="Models\Student.cs" />
+    <Compile Include="Models\Student1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -215,6 +232,16 @@
     <Content Include="Views\KhachHang\Index.cshtml" />
     <Content Include="Views\KhachHang\Create.cshtml" />
     <Content Include="Views\QuanLy\Index.cshtml" />
+    <Content Include="Views\Person\Create.cshtml" />
+    <Content Include="Views\Person\Delete.cshtml" />
+    <Content Include="Views\Person\Details.cshtml" />
+    <Content Include="Views\Person\Edit.cshtml" />
+    <Content Include="Views\Person\Index.cshtml" />
+    <Content Include="Views\Student1\Create.cshtml" />
+    <Content Include="Views\Student1\Delete.cshtml" />
+    <Content Include="Views\Student1\Details.cshtml" />
+    <Content Include="Views\Student1\Edit.cshtml" />
+    <Content Include="Views\Student1\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -253,6 +280,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202103040402082_Create_Table_QuanLy.resx">
       <DependentUpon>202103040402082_Create_Table_QuanLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104060230407_Create_Table_Person.resx">
+      <DependentUpon>202104060230407_Create_Table_Person.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104060232289_Create_Table_Student1.resx">
+      <DependentUpon>202104060232289_Create_Table_Student1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104060237266_Create_Table_NhanVien.resx">
+      <DependentUpon>202104060237266_Create_Table_NhanVien.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

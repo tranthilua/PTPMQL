@@ -18,6 +18,7 @@ namespace PTPMQL.Models
         public virtual DbSet<KhachHang> KhachHangs { get; set; }
 
         public virtual DbSet<QuanLy> QuanLys { get; set; }
+        public virtual DbSet<Person> Persons { get; set; }
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -27,5 +28,7 @@ namespace PTPMQL.Models
                 .IsFixedLength()
                 .IsUnicode(false);
         }
+
+        public System.Data.Entity.DbSet<PTPMQL.Models.Student1> Student1 { get; set; }
     }
 }
