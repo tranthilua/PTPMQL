@@ -19,6 +19,7 @@ namespace PTPMQL.Models
 
         public virtual DbSet<QuanLy> QuanLys { get; set; }
         public virtual DbSet<Person> Persons { get; set; }
+        public virtual DbSet<test> tests { get; set; }
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

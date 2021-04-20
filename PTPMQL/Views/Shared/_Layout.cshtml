@@ -6,6 +6,8 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/ckeditor")
+
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -28,6 +30,10 @@
                     <li>@Html.ActionLink(" Quản lý ", "Index", "QuanLy")</li>
                     <li>@Html.ActionLink(" person", "Index", "Person")</li>
                     <li>@Html.ActionLink(" Student1 ", "Index", "Student1")</li>
+                    <li>@Html.ActionLink("Đăng ký ", "Register", "Account")</li>
+                    <li>@Html.ActionLink("Đăng nhập ", "Login", "Account")</li>
+                    <li>@Html.ActionLink("Đăng xuất ", "Logout", "Account")</li>
+                    
                 </ul>
             </div> 
         </div>

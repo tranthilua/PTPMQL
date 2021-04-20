@@ -11,8 +11,11 @@ namespace PTPMQL.Models
     public class Account
     {
         [Key]
+        [Required(ErrorMessage = "Username không được để trống.")]
         public string UserName { get;set; }
-        public string Password { get; set; }
+        [Required(ErrorMessage = "Password không được để trống.")]
+        [DataType(DataType.Password)]
+        public string Password { get; set; } 
 
 
     }
